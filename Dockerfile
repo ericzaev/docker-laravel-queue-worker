@@ -40,7 +40,7 @@ COPY supervisord-watchdog.py /opt/supervisord-watchdog.py
 # Copy scripts
 COPY init.sh /usr/local/bin/init.sh
 
-VOLUME /var/www/app
+VOLUME /var/www/webroot/ROOT/src
 
 # Run supervisor
 ENTRYPOINT ["/bin/sh", "/usr/local/bin/init.sh"]
